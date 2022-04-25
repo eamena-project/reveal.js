@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>EAMENA</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,8 +16,33 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<a href="https://eamena.org/home">
+						<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/logo_complete.png" alt="eamena.png logo" style="height: 90px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<p>
+					A presentation of ongoing work with the <br>
+					<a href="https://database.eamena.org/en/">EAMENA database</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background-iframe="https://database.eamena.org/en/search?paging-filter=1&tiles=true&format=tilecsv&precision=6&total=335815&map-filter=%7B%22type%22%3A%22FeatureCollection%22%2C%22features%22%3A%5B%7B%22id%22%3A%223ba0f01b68b10b7b2587b5130e5b9df7%22%2C%22type%22%3A%22Feature%22%2C%22properties%22%3A%7B%22buffer%22%3A%7B%22width%22%3A10%2C%22unit%22%3A%22m%22%7D%2C%22inverted%22%3Afalse%7D%2C%22geometry%22%3A%7B%22coordinates%22%3A%5B%5B%5B34.93687965631881%2C29.362051534367183%5D%2C%5B35.995584805037794%2C29.19887332163556%5D%2C%5B36.14014695385856%2C28.741338964727106%5D%2C%5B36.10613233060619%2C27.782643124806768%5D%2C%5B36.118486181903904%2C26.845420903390675%5D%2C%5B35.68180654990957%2C26.86188243186787%5D%2C%5B34.45049308497232%2C27.93930517452776%5D%2C%5B34.795531009271485%2C29.036528157722955%5D%2C%5B34.93687965631881%2C29.362051534367183%5D%5D%5D%2C%22type%22%3A%22Polygon%22%7D%7D%5D%7D" data-background-interactive>
+						<div style="position: absolute; width: 60%; right: 0;">
+							<h2>NEOM AREA</h2>
+							<p><small>See the EAMENA precise Heritage Place locations by clicking on the bottom rigth <font color="lightblue">light blue down arrow</font></small></p>
+						</div>
+					</section>
+
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/area_saudi_arabia_neom.png">
+						<div style="position: absolute; width: 40%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>NEOM AREA</h2>
+							<p>The region of Saudi Arabia east of the Gulf of Aqaba will be impacted by planned construction of the NEOM mega city. This will affect the environment of the area affected by the footprint of the new urban centre, as well as the infrastructure that will be developed in the wider hinterland. The heritage places recorded here represent many of the visible archaeological structures that may be endangered by this development<br>
+							<br>
+							<i><a href="https://database.eamena.org/en/auth/">register to EAMENA</a> to access NEOM endangered heritage places</i></p>
+						</div>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -26,13 +51,8 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
