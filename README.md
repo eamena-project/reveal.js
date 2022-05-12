@@ -10,7 +10,7 @@ Highlight your work for the EAMENA-MaREA project by creating easy-to-write summa
 * 🗺️ create a GeoJson polygon of your research area with https://geojson.io/
 * 📷 select 1 relevant background image (with credits if exist)
 
-Send the abstract, the polygon geometry and the image to @EMANA
+Send the abstract 📰, the polygon geometry 🗺️, and the image 📷 to @EMANA
 
 ## Examples
 
