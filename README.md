@@ -13,19 +13,13 @@ Send the abstract and the geometry to @EMANA
 
 ## Examples
 
-| Presentation number| Title           | Author            |
-| ----------- | ----------------|-------------------|
-| 1      | The NEOM area   |https://eamena.org/people/dr-michael-fradley)
-
 <table>
   <tr>
-    <th>Presentation num</th>
-    <th>Title</th>
+    <th>Presentation</th>
     <th>Author</th>
   </tr>
   <tr>
-    <td><a href="https://eamena-oxford.github.io/reveal.js/#/1">1</a></td>
-    <td>The NEOM area</td>
+    <td><a href="https://eamena-oxford.github.io/reveal.js/#/1">The NEOM area</a></td>
     <td><a href="https://eamena.org/people/dr-michael-fradley">Michael Fradley</a></td>
   </tr>
 </table>
