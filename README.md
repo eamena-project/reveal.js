@@ -6,11 +6,11 @@ The use of [reveal.js](#reaveal.js) allows to merge JavaScript and Powerpoint-li
 
 Highlight your work for the EAMENA-MaREA project by creating easy-to-write summaries of the relevant elements of your work by:
 
-* writing a ~ 100 words abstract
-* create a GeoJson polygon of your research area with https://geojson.io/
-* send relevant background images (with credits if exist)
+* 📰 writing a ~ 100 words abstract
+* 🗺️ create a GeoJson polygon of your research area with https://geojson.io/
+* 📷 select 1 relevant background image (with credits if exist)
 
-Send the abstract and the geometry to @EMANA
+Send the abstract, the polygon geometry and the image to @EMANA
 
 ## Examples
 
