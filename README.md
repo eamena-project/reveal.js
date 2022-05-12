@@ -1,3 +1,24 @@
+# EAMENA interactive board
+
+The use of [reveal.js](#reaveal.js) allows to merge JavaScript and Powerpoint-like frameworks to develop interactive web presentations.
+
+## Shine a light on your work
+
+Highlight your work for the EAMENA-MaREA project by creating easy-to-write summaries of the relevant elements of your work by:
+
+* writing a 100 words abstract
+* create a GeoJson polygon of your research area with https://geojson.io/
+
+Send the abstract and the geometry to @EMANA
+
+## Examples
+
+| Presentation number| Title           | Author            |
+| ----------- | ----------------|-------------------|
+| [1](https://eamena-oxford.github.io/reveal.js/#/1)      | The NEOM area   |[Michael Fradley(https://eamena.org/people/dr-michael-fradley])
+
+# reaveal.js
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
