@@ -19,6 +19,7 @@ Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
 
 ## Presentations
 
+<div align="center">
 <table>
   <tr>
     <th>Presentation</th>
@@ -33,6 +34,7 @@ Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
     <td>Dr Bijan Rouhani</td>
   </tr>
 </table>
+</div>
 
 --- 
 This presentation framework use the [reveal.js](#reaveal.js) created by Hakim El Hattab
