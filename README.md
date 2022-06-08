@@ -6,11 +6,17 @@ The use of [reveal.js](#reaveal.js) allows to merge JavaScript and Powerpoint-li
 
 Highlight your work for the EAMENA-MaREA project by creating easy-to-write summaries of the relevant elements of your work by:
 
-* 📰 writing a ~ 100 words abstract
-* 🗺️ create a GeoJson polygon of your research area with https://geojson.io/
-* 📷 select 1 relevant background image (with credits if exist)
+* 📰 **Text** 📰
+  - write a ~ 100 words abstract
 
-Send the abstract 📰, the polygon geometry 🗺️, and the image 📷 to @EMANA
+* 🗺️ **Spatial** 🗺️
+  - follow these [guidelines](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme), or
+  - create a GeoJSON polygon of your research area with https://geojson.io/
+
+* 📷 **Photograph** 📷
+  - select 1 relevant photograph (with credits if exist)
+
+Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
 
 ## Examples
 
@@ -21,7 +27,11 @@ Send the abstract 📰, the polygon geometry 🗺️, and the image 📷 to @EMA
   </tr>
   <tr>
     <td><a href="https://eamena-oxford.github.io/reveal.js/#/1">The NEOM area</a></td>
-    <td><a href="https://eamena.org/people/dr-michael-fradley">Michael Fradley</a></td>
+    <td><a href="https://eamena.org/people/dr-michael-fradley">Dr Michael Fradley</a></td>
+  </tr>
+    <tr>
+    <td><a href="https://eamena-oxford.github.io/reveal.js/#/2">Caravanserails</a></td>
+    <td><a href="https://eamena.org/people/dr-bijan-rouhani">Dr Bijan Rouhani</a></td>
   </tr>
 </table>
 
