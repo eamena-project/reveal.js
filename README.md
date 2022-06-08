@@ -27,11 +27,11 @@ Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
   </tr>
   <tr>
     <td><a href="https://eamena-oxford.github.io/reveal.js/#/1">The NEOM area</a></td>
-    <td><a href="https://eamena.org/people/dr-michael-fradley">Dr Michael Fradley</a></td>
+    <td>Dr Michael Fradley<</td>
   </tr>
     <tr>
     <td><a href="https://eamena-oxford.github.io/reveal.js/#/2">Caravanserails</a></td>
-    <td><a href="https://eamena.org/people/dr-bijan-rouhani">Dr Bijan Rouhani</a></td>
+    <td>Dr Bijan Rouhani</td>
   </tr>
 </table>
 
