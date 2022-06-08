@@ -9,7 +9,7 @@ Highlight your work for the EAMENA-MaREA project by creating easy-to-write summa
   - write a ~ 100 words abstract
 
 * 🗺️ **Spatial** 🗺️
-  - follow these [guidelines](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme), or
+  - follow these [guidelines](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme), *or*
   - create a GeoJSON polygon of your research area with https://geojson.io/
 
 * 📷 **Photograph** 📷
@@ -29,9 +29,13 @@ Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
     <td><a href="https://eamena-oxford.github.io/reveal.js/#/1">The NEOM area</a></td>
     <td>Dr Michael Fradley</td>
   </tr>
-    <tr>
+  <tr>
     <td><a href="https://eamena-oxford.github.io/reveal.js/#/2">Caravanserails</a></td>
     <td>Dr Bijan Rouhani</td>
+  </tr>
+  <tr>
+    <td><a href="https://eamena-oxford.github.io/reveal.js/#/3">APAAME</a></td>
+    <td>APAAME team</td>
   </tr>
 </table>
 </div>
