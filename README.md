@@ -9,6 +9,7 @@ Highlight your work for the EAMENA-MaREA project by creating easy-to-write summa
   - write a ~ 100 words abstract
 
 * 🗺️ **Spatial** 🗺️
+  - from a [EAMENA search URL](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme) for example 
   - follow these [guidelines](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme), *or*
   - create a GeoJSON polygon of your research area with https://geojson.io/
 
@@ -16,6 +17,7 @@ Highlight your work for the EAMENA-MaREA project by creating easy-to-write summa
   - select 1 relevant photograph (with credits if exist)
 
 Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
+
 
 ## Presentations
 
