@@ -28,6 +28,8 @@ export default {
 	// Visibility rule for backwards navigation arrows; "faded", "hidden"
 	// or "visible"
 	controlsBackArrows: 'faded',
+	// controlsRightArrow: "hidden",
+	// controlsLeftArrow: "hidden",
 
 	// Display a presentation progress bar
 	progress: true,

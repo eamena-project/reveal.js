@@ -40,6 +40,8 @@ export default class Controls {
 			<button class="navigate-right" aria-label="${ rtl ? 'previous slide' : 'next slide' }"><div class="controls-arrow"></div></button>
 			<button class="navigate-up" aria-label="above slide"><div class="controls-arrow"></div></button>
 			<button class="navigate-down" aria-label="below slide"><div class="controls-arrow"></div></button>`;
+			// `<button class="navigate-up" aria-label="above slide"><div class="controls-arrow"></div></button>
+			// <button class="navigate-down" aria-label="below slide"><div class="controls-arrow"></div></button>`;
 
 		this.Reveal.getRevealElement().appendChild( this.element );
 

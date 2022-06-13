@@ -24,6 +24,7 @@ const autoprefixer = require('gulp-autoprefixer')
 
 const root = yargs.argv.root || '.'
 const port = yargs.argv.port || 8000
+// const port = yargs.argv.port || '8000/projects'
 const host = yargs.argv.host || 'localhost'
 
 const banner = `/*!
@@ -273,6 +274,7 @@ gulp.task('package', gulp.series(() =>
 
     gulp.src(
         [
+            // './caravanserail.html',
             './index.html',
             './dist/**',
             './lib/**',
