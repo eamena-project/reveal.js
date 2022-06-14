@@ -28,15 +28,15 @@ Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
     <th>Author</th>
   </tr>
   <tr>
-    <td><a href="https://eamena-oxford.github.io/reveal.js/#/1">The NEOM area</a></td>
+    <td><a href="https://eamena-oxford.github.io/reveal.js/projects/neom">The NEOM area</a></td>
     <td>Dr Michael Fradley</td>
   </tr>
   <tr>
-    <td><a href="https://eamena-oxford.github.io/reveal.js/#/2">Caravanserails</a></td>
+    <td><a href="https://eamena-oxford.github.io/reveal.js/projects/caravanserail">Caravanserails</a></td>
     <td>Dr Bijan Rouhani</td>
   </tr>
   <tr>
-    <td><a href="https://eamena-oxford.github.io/reveal.js/#/3">APAAME</a></td>
+    <td><a href="https://eamena-oxford.github.io/reveal.js/projects/apaame">APAAME</a></td>
     <td>APAAME team</td>
   </tr>
 </table>
