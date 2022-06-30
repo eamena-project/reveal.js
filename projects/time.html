@@ -20,33 +20,127 @@
 
 					<section>
 						<div style="position: absolute; width: 90%; right: 0;">
-							<h3>Temporal analysis of disturbances to cultural heritage during the Syrian conflict</h3>
+							<h3>Analyzing the <a href="https://database.eamena.org/en/">EAMENA database</a> with R and Python scripted routine</h3>
+							<p><smaller>Thomas Huet, Kristen Hopper, Will Deadman</smaller></p>
+							<br>
+							<a href="https://eamena.org/home">
+								<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/logo_complete.png" alt="eamena.png logo" style="height: 70px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+							</a>
+							<p><small>EAMENA Workshop 7-8th July 2022</small></p>
 						</div>
+						<aside class="notes">
+							The purpose of our presentation is to show how the use of DB can be improved by connecting it to other open source software. This presentation has been made on open source app, is hosted online on EAMENA's GitHub repository, and can therefore be retrieved later from a simple URL. 						
+						</aside>					  
+					</section>
+
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/EA-SummerWorkshop22.png">
+						<aside class="notes">
+							In the front end, the best way to collect data before analyzing it is to "clipboard" the result of a search as a GeoJSON URL. Then the URL can be pasted into any web browser and it is converted into a GeoJSON object. From the back-end, a connector can be created with R and/or Python to connect to the Postgresql database where all the data is stored. R and/or Python can be used in standalone files, for example hosted on GitHub (without the passwords!) or on the cloud to create all possible outputs (graphs, maps, etc., interactive or not), but also to create data-driven documents mixing computer routines and narrative text.
+							</aside>
+					</section>
+
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-bam-assessement-date.png">
+						<aside class="notes">
+							As a study, we will focus on the temporal dimension of EAMENA records. This is relevant because EAMENA records the different threats, simultaneous, or spread out in time, that can affect the heritage. One of the simplest examples is the "date of assessment activity", i.e. the date of creation of a record. Currently, the data type of the "assessment activity date" is a date in the standard format YYYY-MM-DD (ISO 8601).
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/threats_day.html" data-background-interactive>
+						<aside class="notes">
+							Using the workflow presented in the first slide, we can visualise in an interactive chart, all 'Assessment Activity Dates' of EAMENA considering the different categories of threats.
+							by days...
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/threats_month.html" data-background-interactive>
+						<aside class="notes">
+							by months..
+						</aside>	
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/threats_year.html" data-background-interactive>
+						<aside class="notes">
+							by years..
+						</aside>
+					</section>
+
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-cultural-periods.png">
+						<div style="position: absolute; width: 40%; right:-160px; top:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>EDTF</h2>
+							<p>Extended Date/Time Format (EDTF, ISO 8601-2:2019) provides a standard syntax for fuzzy dates, very precise (timestamp) dates, negative years, intervals, and a number of standardised formats<br>
+						</div>
+						<aside class="notes">
+							In EAMENA, the Absolute Chronology menu uses EDTF format for the dates. EDTF is an extension of the date type format, allowing a complete record of all types of time evaluations whatever their fuzzyness.
+						</aside>
+					</section>
+
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-bam.png">
+						<div style="position: absolute; width: 40%; left:0px ; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>Bam Citadel</h2><br>
+							<small>EAMENA-0164997</small>
+							<p>Bam is situated in a desert environment on the southern edge of the Iranian high plateau. The origins of Bam can be traced back to the Achaemenid period (6<sup>th</sup> to 4<sup>th</sup> centuries BC). Its heyday was from the 7<sup>th</sup> to 11<sup>th</sup> centuries, being at the crossroads of important trade routes and known for the production of silk and cotton garments. The existence of life in the oasis was based on the underground irrigation canals, the qanāts, of which Bam has preserved some of the earliest evidence in Iran. Arg-e Bam is the most representative example of a fortified medieval town built in vernacular technique using mud layers (Chineh).<br>
+							<br>
+							<smaller><a href="https://whc.unesco.org/en/list/1208/">https://whc.unesco.org/en/list/1208/</a></smaller>
+						</div>
+						<aside class="notes">
+							Let us now see how EDTF can be used to record more or less precise temporal events brought by different sources. We choose the case of the citadel of Bam, in Iran. Its history has its roots in the Achaemenid period.
+						</aside>
 					</section>
 
 					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/bam" data-background-interactive>
-						<h4>Bam (Iran) world heritage site</h4>
+						<!-- <div style="position: absolute; width: 70%; left:-170px; bottom:0px;">
+							<h4>Bam (Iran) world heritage site</h4>
+						</div> -->
 						<div style="position: absolute; width: 40%; left:-160px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-								<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/BAM_IR2726.JPG"  height="300">
-								Before the earthquake, September 2003, three months before the earthquake <br><small> CC BY-SA 3.0</small><br>
+							Photograph
+							<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/BAM_IR2726.JPG"  height="300">
+							Bam citadel in September 2003, three months before the earthquake <br><br>
+							<small>Wikimedia, CC BY-SA 3.0</small><br>
 						</div>
-						<div style="position: absolute; width: 40%; right:60px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<div style="position: absolute; width: 35%; right:150px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 							<h2>Earthquake</h2>
-							Date: 2003-12-26 ; Time: 01:56:52</p>
+							Date: 2003-12-26 ; Time: 01:56:52 GMT</p>
 						</div>
-						<div style="position: absolute; width: 40%; right:60px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-							<h2>Earthquake</h2>
-							Date: 2003-12-26 ; Time: 01:56:52</p>
+						<div style="position: absolute; width: 30%; left:50px; top:450px; box-shadow: 0 1px 4px rgba(0,0,0,0), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(255, 0, 0, 1); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h3>EDTF</h3>
+							2003-09<br>
+							<em>or</em><br>
+							2003-12-26T01:56:52+03:30..</p>
 						</div>
+						<div style="position: absolute; width: 40%; right:-160px; top:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<p style = "text-align: right">Photograph</p>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Destruction_of_the_Bam_Citadel.jpg"  height="300">
+							Bam citadel after the earthquake (unknown date)<br><br>
+							<small>Wikimedia, Public domain</small><br>
+						</div>
+						<div style="position: absolute; width: 30%; right:100px; top:150px; box-shadow: 0 1px 4px rgba(0,0,0,0), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(255, 0, 0, 1); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h3>EDTF</h3>
+							..2003-12-26T01:56:52+03:30</p>
+						</div>
+						<aside class="notes">
+							The citadel of Bam was destroyed by an earthquake in 2003, exactly on December 26, 2003, at 01h56m52s GMT.
+							The two photographs presented here show the citadel before its destruction (left), and after its destruction (right). These photographs can be saved as information resources in EAMENA. The red boxes show how the moment of creation can be saved in EDTF format. We know that the photograph on the left was created 3 months before the earthquake, in September, but we do not yet know the exact day, so we can record it in YYYY-MM format. For the same photograph, a second EDTF notation (more complex, actually!) concatenates the date of the earthquake, the GMT offset (+3:30) and two dots indicating that the photograph was taken before that date. The date of the second photograph is unknown, but it was taken after the earthquake: we reuse the same notation with the difference that the two dots are before the earthquake date. 
+						</aside>
 					</section>
 
 					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/functions/time/results/threats" data-background-interactive>
-						<div style="position: absolute; width: 40%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-							<h2>EDTF</h2>
-							<p>...Extended Date/Time Format (EDTF, ISO 8601-2:2019) provides a standard syntax for fuzzy dates, very precise (timestamp) dates, negative years, intervals, and a number of standardised formats...<br>
+						<div style="position: absolute; width: 60%;  left:-100px; top:0px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; ">
+							<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-caa22.png"  height="400", width="700">
 						</div>
+						<aside class="notes">
+							We now turn to how EDTF helps to model temporal dynamics. We reuse the results of a previous research (Almohamad et al., paper under review) on condition assessment data of 19 archaeological sites in northwestern Syria covering a five-year survey (2014-2019) with multi-temporal ground and remote sensing assessments. This Excel spreadsheet aggregates 218 different dates in EDTF format to handle all source uncertainties. This dataset was analyzed with an R script, and displayed in an interactive web graph. The disturbance analysis showed a clear correlation between the temporal pattern of the different damage types and the evolution of the political situation in the study area.  
+						</aside>
 					</section>
 
+					<section>
+						<div style="position: absolute; width: 90%; right: 0;">
+							<h4>Conclusion</h3>
+						<aside class="notes">
+							As you have seen, this presentation gathers several interactive web files generated through open source applications that can then be reused as is in other contexts (data driven document, tutorials, social media, etc.)
+							EAMENA = massive database, connects with open source apps, semantic web (JSON), computer routines shared on GitHub, interactive data-driven documents in authoring frameworks for data science
+							EDTF to analyse the dynamics of threats and cultural heritage conditions
+						</aside>					  
+					</section>
 			</div>
 		</div>
 
