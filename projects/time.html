@@ -21,22 +21,21 @@
 					<section>
 						<div style="position: absolute; width: 90%; right: 0;">
 							<h3>Analyzing the <a href="https://database.eamena.org/en/">EAMENA database</a> with R and Python scripted routine</h3>
-							<br>
 							<p><smaller>Thomas Huet, Kristen Hopper, Will Deadman</smaller></p>
 							<a href="https://eamena.org/home">
 								<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/logo_complete.png" alt="eamena.png logo" style="height: 70px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
 							</a>
-							<p><small>EAMENA Workshop 7-8th July 2022</small></p>
+							<p><small>EAMENA Workshop 7-8<sup>th</sup> July 2022</small></p>
 						</div>
 						<aside class="notes">
-							The purpose of our presentation is to show how the use of DB can be improved by connecting it to other open source software. EAMENA is known to be a geo-web database, so the spatial information of its records is commonly used to perform analysis. To illustrate our purpose, we will focus here on its temporal dimension. This presentation is hosted online on EAMENA's GitHub repository, and can therefore be retrieved later from a simple URL. It embeds different links, interactive graphics or maps, made on open source app as the presentation itself.
+							The purpose of our presentation is to show how the use of EAMENA DB can be improved by connecting it to other open source software. To illustrate our purpose, we will focus here on EAMENA temporal data. This presentation is hosted online on EAMENA's GitHub repository, and can therefore be retrieved later from a simple URL. It embeds different links, interactive graphics or maps, made on open source app as the presentation itself.
 	
 						</aside>					  
 					</section>
 
 					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/EA-SummerWorkshop22.png">
 						<aside class="notes">
-							In the front end, the best way to collect data before analyzing it is to "clipboard" the result of a search as a GeoJSON URL. Then the URL can be pasted into any web browser and it is converted into a GeoJSON object. Actually, JSON is the main data exchange format. From the back-end, a connector can be created with R and/or Python to connect to the Postgresql database where all the EAMENA data is stored. R and/or Python can be used in standalone files, for example hosted on GitHub (without the passwords!) or on the cloud to create all possible outputs (graphs, maps, etc., interactive or not), but also to create data-driven documents mixing computer routines and narrative text.
+							In the front end, the best way to collect data before analyzing it is to "clipboard" the result of a search as a GeoJSON URL. Then the URL can be pasted into any web browser and it is converted into a GeoJSON object. Actually, JSON is the main data exchange format. From the back-end, a connector can be created with R and/or Python to query the Postgresql database where all the EAMENA data is stored. R and/or Python can be used in standalone files, or online to create all possible outputs (graphs, maps, etc., interactive or not, narratives with calculated fields).
 							</aside>
 					</section>
 
@@ -69,6 +68,7 @@
 						<div style="position: absolute; width: 40%; right:-160px; top:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 							<h2>EDTF</h2>
 							<p>Extended Date/Time Format (EDTF) is an iso-standard (ISO 8601-2:2019) providing a formal syntax for fuzzy dates, very precise (timestamp) dates, negative years, intervals, seasons, and a number of standardised formats<br>
+							<br>
 							<smaller>EDTF on the <a ref="http://www.loc.gov/standards/datetime/">Library of Congress</a></smaller>
 						</div>
 						<aside class="notes">
@@ -85,7 +85,7 @@
 							<smaller><a href="https://whc.unesco.org/en/list/1208/">https://whc.unesco.org/en/list/1208/</a></smaller>
 						</div>
 						<aside class="notes">
-							Let us now see how EDTF can be used to record more or less precise temporal events brought by different sources. We choose the case of the citadel of Bam, in Iran. Its history has its roots in the Achaemenid period.
+							Let see how EDTF can be used to record more or less precise temporal events brought by different sources. We choose the case of the citadel of Bam, in Iran. Its history has its roots in the Achaemenid period.
 						</aside>
 					</section>
 
@@ -105,9 +105,7 @@
 						</div>
 						<div style="position: absolute; width: 30%; left:50px; top:450px; box-shadow: 0 1px 4px rgba(0,0,0,0), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(255, 0, 0, 1); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 							<h3>EDTF</h3>
-							2003-09<br>
-							<em>or</em><br>
-							2003-12-26T01:56:52+03:30..</p>
+							2003-09</p>
 						</div>
 						<div style="position: absolute; width: 40%; right:-160px; top:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 							<p style = "text-align: right">Photograph</p>
@@ -120,8 +118,8 @@
 							..2003-12-26T01:56:52+03:30</p>
 						</div>
 						<aside class="notes">
-							The citadel of Bam was destroyed by an earthquake in 2003, exactly on December 26, 2003, at 01h56m52s GMT.
-							The two photographs presented here show the citadel before its destruction (left), and after its destruction (right). These photographs can be saved as information resources in EAMENA. The red boxes show how the moment of creation can be saved in EDTF format. We know that the photograph on the left was created 3 months before the earthquake, in September, but we do not yet know the exact day, so we can record it in YYYY-MM format. The date of the second photograph is unknown, but it was taken after the earthquake: the EDTF format is the concatenate of the date of the earthquake, the GMT offset (+3:30) and two leading dots indicating that the photograph was taken after the earthquake date. 
+							The citadel of Bam has been destroyed by an earthquake in 2003, exactly on December 26 at 01h56m52s GMT.
+							The two photographs presented here show the citadel before its destruction (left), and after its destruction (right). These photographs can be saved as information resources in EAMENA. The red boxes show how when the 'Assessment Activity Date' in EDTF format. We know that the photograph on the left was created 3 months before the earthquake, in September, but we do not yet know the exact day, so we can record it in YYYY-MM format. The date of the second photograph is unknown, but it was taken after the earthquake: the EDTF format is the concatenate of the date of the earthquake, the GMT offset (+3:30) and two leading dots indicating that the photograph was taken after the earthquake date. 
 						</aside>
 					</section>
 
@@ -212,7 +210,7 @@
 							</table>
 						</div>
 						<aside class="notes">
-							We now turn to how EDTF helps model temporal dynamics. We reuse results from previous research (Almohamad et al., paper under review) on condition assessment data from 19 archaeological sites in northwestern Syria registred over a five-year survey (2014-2019) with ground-based and remotely sensed multi-temporal assessments.
+							We now turn to how EDTF helps model temporal dynamics. We reuse results from previous research (Almohamad et al., paper under review) on condition assessment data from 19 archaeological sites in northwestern Syria registred over a five-year survey (2014-2019) with ground-based and remotely multi-temporal assessments.
 						</aside>
 					</section>
 
@@ -221,7 +219,7 @@
 							<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-caa22.png"  height="400", width="700">
 						</div>
 						<aside class="notes">
-							This study collected 218 different dates now converted to EDTF format to handle all source uncertainties, and a sample is listed here, in this Excel spreadsheet. This dataset was analyzed with an R script, and displayed in an interactive web graph. The disturbance analysis showed a clear correlation between the temporal pattern of different types of damage and the changing political situation in the study area.
+							This study collected 218 different dates now converted to EDTF format to handle all source uncertainties, and a sample is listed here, in this Excel spreadsheet. This dataset was processed with an R function, and displayed in an interactive web graph. The disturbance analysis showed a clear correlation between the temporal pattern of different types of damage and the changing political situation in the study area.
 						</aside>
 					</section>
 
@@ -339,15 +337,15 @@
 							</table>
 						</div>
 						<aside class="notes">
-							AM009 as it has clear conflict related damage within the time period of the study
+							AM009 has clear conflict related damage within the time period of the study
 						</aside>
 					</section>
 
-					<section>
-						<div style="position: absolute; width: 90%; right: 0;">
-							<h4>Conclusion</h3>
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/EA-SummerWorkshop22.png">
+						<div style="position: absolute; width: 90%; top:0; right: 0; color: #000;">
+							<h2 style="color: #000;">Conclusion</h2>
 						<aside class="notes">
-							 EAMENA is a massive database that connects to open source applications.  The database offers all the computing facilities to semantize its content and complies with open science high standards. EDTF time format is one of these international standards supported by the database. Scripted routines facilitate the management of very large volumes of data within a framework compliant with open science. Nowadays, Python is the most widely used programming language in the world. For the EAMENA project it would rather have a back-end usage to develop new functionalities (ex: ring-fencing). R is the most used programming language in archaeology with numerous libraries, a large user community and available teaching material. It is adapted for a front-end user. R is easy to install and quite easy to learn. Cloud computing with shared graphical interfaces (programming consoles) or platforms like GitHub make it possible to share and co-develop entire or partial applications.  					This presentation brings together interactive web files that can then be reused as is in other contexts (data-driven document, tutorials, social media, etc.) that can be merged with text/narratives offer a powerful authoring frameworks for research and cultural heritage management.  
+							 EAMENA is a massive geo-web database that connects to open source applications.  The database offers all the computing facilities to semantize its content and complies with open science high standards. EDTF time format is one of these international standards supported by the database. Scripted routines facilitate the management of very large volumes of data within a framework compliant with open science. Nowadays, Python is the most widely used programming language in the world. For the EAMENA project it would rather have a back-end usage to develop new functionalities (ex: ring-fencing). R is the most used programming language in archaeology with numerous libraries, a large user community and available teaching material. It is adapted for a front-end user. R is easy to install and quite easy to learn. Cloud computing with shared graphical interfaces (programming consoles) or platforms like GitHub make it possible to share and co-develop entire or partial applications.  					This presentation brings together interactive web files that can then be reused as is in other contexts (data-driven document, tutorials, social media, etc.) that can be merged with text/narratives offer a powerful authoring frameworks for research and cultural heritage management.  
 						</aside>					  
 					</section>
 			</div>
@@ -361,6 +359,7 @@
 			Reveal.initialize({
 				hash: true,
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				// zoomKey: 'tab'
 			});
 		</script>
 	</body>
