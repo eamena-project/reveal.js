@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>EAMENA - Summer Workshop</title>
+		<title>EAMENA Summer Workshop</title>
 
 		<link rel="stylesheet" href="../dist/reset.css">
 		<link rel="stylesheet" href="../dist/reveal.css">
@@ -28,20 +28,24 @@
 							<p><small>EAMENA Workshop 7-8<sup>th</sup> July 2022</small></p>
 						</div>
 						<aside class="notes">
-							The purpose of our presentation is to show how the use of EAMENA DB can be improved by connecting it to other open source software. To illustrate our purpose, we will focus here on EAMENA temporal data. This presentation is hosted online on EAMENA's GitHub repository, and can therefore be retrieved later from a simple URL. It embeds different links, interactive graphics or maps, made on open source app as the presentation itself.
+							The purpose of our presentation is to show how the use of the EAMENA DB can be improved by connecting it to other open source software. To illustrate our purpose, we will focus on the temporal data of the DB. This presentation is hosted online on EAMENA's GitHub repository, and can therefore be retrieved later from a simple URL. It embeds different links, interactive graphics or maps, made on open source app as the powerpoint-like presentation itself.
 	
 						</aside>					  
 					</section>
 
 					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/EA-SummerWorkshop22.png">
 						<aside class="notes">
-							In the front end, the best way to collect data before analyzing it is to "clipboard" the result of a search as a GeoJSON URL. Then the URL can be pasted into any web browser and it is converted into a GeoJSON object. Actually, JSON is the main data exchange format. From the back-end, a connector can be created with R and/or Python to query the Postgresql database where all the EAMENA data is stored. R and/or Python can be used in standalone files, or online to create all possible outputs (graphs, maps, etc., interactive or not, narratives with calculated fields).
+							In the front end, the best way to collect EAMENA data is to "clipboard" the result of a search as a GeoJSON URL. Then the URL can be pasted into a web browser and it is converted into a GeoJSON object. Actually, with the spread of the web, JSON is the main format for data exchange. From the back-end, a connector can be created with R and/or Python to query the Postgresql database where all the EAMENA data is stored. R and/or Python can be either used in standalone files, or online to create any possible outputs (graphs, maps, etc., interactive or not, narratives with calculated fields, etc.).
 							</aside>
 					</section>
 
 					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-bam-assessement-date.png">
+						<div style="position: absolute; width: 40%; right:-160px; top:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>Assessment Activity Date</h2>
+							<p>A Date record type, in the standard format YYYY-MM-DD (ISO 8601)<br>
+						</div>
 						<aside class="notes">
-							As a study, we will focus on the temporal dimension of EAMENA records. This is relevant because EAMENA records the different threats, simultaneous, or spread out in time, that can affect the cultural heritage. One of the simplest examples is the "date of assessment activity", i.e. the date of creation of a record. Currently, the data type of the "assessment activity date" is a date in the standard format YYYY-MM-DD (ISO 8601).
+							As a study, we will focus on the temporal dimension of EAMENA records. This is relevant because EAMENA records the threats that occur simultaneously, or spread out in time, on the cultural heritage. One of the simplest examples is the "Assessment activity date", i.e. the date of creation of a record. Currently, the data type of the "Assessment Activity Date" is a date in the standard format YYYY-MM-DD (ISO 8601).
 						</aside>
 					</section>
 
@@ -54,7 +58,7 @@
 
 					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/threats_month.html" data-background-interactive>
 						<aside class="notes">
-							by months..
+							These dates can be aggregate by months..
 						</aside>	
 					</section>
 
@@ -67,7 +71,7 @@
 					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-cultural-periods.png">
 						<div style="position: absolute; width: 40%; right:-160px; top:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 							<h2>EDTF</h2>
-							<p>Extended Date/Time Format (EDTF) is an iso-standard (ISO 8601-2:2019) providing a formal syntax for fuzzy dates, very precise (timestamp) dates, negative years, intervals, seasons, and a number of standardised formats<br>
+							<p>Extended Date/Time Format (EDTF) is an iso-standard (ISO 8601-2) extending the Date format. It provides a formal syntax to record fuzzy dates, very precise dates (timestamp), negative date, intervals, seasons, and a number of other standardised formats<br>
 							<br>
 							<smaller>EDTF on the <a ref="http://www.loc.gov/standards/datetime/">Library of Congress</a></smaller>
 						</div>
@@ -345,7 +349,7 @@
 						<div style="position: absolute; width: 90%; top:0; right: 0; color: #000;">
 							<h2 style="color: #000;">Conclusion</h2>
 						<aside class="notes">
-							 EAMENA is a massive geo-web database that connects to open source applications.  The database offers all the computing facilities to semantize its content and complies with open science high standards. EDTF time format is one of these international standards supported by the database. Scripted routines facilitate the management of very large volumes of data within a framework compliant with open science. Nowadays, Python is the most widely used programming language in the world. For the EAMENA project it would rather have a back-end usage to develop new functionalities (ex: ring-fencing). R is the most used programming language in archaeology with numerous libraries, a large user community and available teaching material. It is adapted for a front-end user. R is easy to install and quite easy to learn. Cloud computing with shared graphical interfaces (programming consoles) or platforms like GitHub make it possible to share and co-develop entire or partial applications.  					This presentation brings together interactive web files that can then be reused as is in other contexts (data-driven document, tutorials, social media, etc.) that can be merged with text/narratives offer a powerful authoring frameworks for research and cultural heritage management.  
+							 EAMENA is a massive geo-web database that connects to open source applications.  The database offers all the computing facilities to semantize its content and complies with science high standards. EDTF time format is one of these iso-standards supported by the database. Scripted routines facilitate the management of very large volumes of data within a framework compliant with open science. Nowadays, Python is the most widely used programming language in the world. For the EAMENA project it would rather have a back-end usage to develop new functionalities (ex: ring-fencing). R is the most used programming language in archaeology with numerous libraries, a large user community and available teaching material. It is adapted for a front-end user. R is easy to install and quite easy to learn. Cloud computing with shared graphical interfaces (programming consoles) or platforms like GitHub make it possible to share and co-develop entire or partial applications.  					This presentation brings together interactive web files that can then be reused as is in other contexts (data-driven document, tutorials, social media, etc.) that can be merged with text/narratives offering a powerful authoring frameworks for research and cultural heritage management.  
 						</aside>					  
 					</section>
 			</div>
