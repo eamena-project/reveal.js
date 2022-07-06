@@ -25,7 +25,7 @@ Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
 <table>
   <tr>
     <th>Presentation</th>
-    <th>Author</th>
+    <th>Authors</th>
   </tr>
   <tr>
     <td><a href="https://eamena-oxford.github.io/reveal.js/projects/neom">The NEOM area</a></td>
@@ -48,7 +48,7 @@ Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
 <table>
   <tr>
     <th>Presentation</th>
-    <th>Author</th>
+    <th>Authors</th>
   </tr>
   <tr>
     <td><a href="https://eamena-oxford.github.io/reveal.js/projects/time">EDTF</a></td>
