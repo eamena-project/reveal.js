@@ -18,8 +18,8 @@
 		<div class="reveal">
 			<div class="slides">
 
-					<section>
-						<div style="position: absolute; width: 90%; right: 0;">
+					<section class="center">
+						<div>
 							<h3>Analyzing the <a href="https://database.eamena.org/en/">EAMENA database</a> with R and Python scripted routine</h3>
 							<p><smaller>Thomas Huet, Kristen Hopper, Will Deadman</smaller></p>
 							<a href="https://eamena.org/home">
@@ -128,7 +128,7 @@
 					</section>
 
 					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/NWSyria_sites" data-background-interactive>
-						<div style="position: absolute; width: 30%; right:-160px; top:150px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px; font-size: 16px; text-align: left;">
+						<div style="position: absolute; width: 30%; right:-160px; top:100px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px; font-size: 16px; text-align: left;">
 							<!-- <p style = "text-align: right">Sites</p> -->
 							<table>
 								<tr>
@@ -149,7 +149,7 @@
 								</tr>
 								<tr>
 									<td>AM004</td>
-									<td>​Tell Arshaf</td>
+									<td>Tell Arshaf</td>
 								</tr>
 								<tr>
 									<td>AM005</td>
@@ -220,8 +220,8 @@
 							However there are issues with this approach including inflated values for the first year of the study, and the fact that an equal number of images was not available for each year.						</aside>
 					</section>
 
-					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/functions/time/results/df_syria_out_threat_types" data-background-interactive>
-						<div style="position: absolute; width: 60%;  left:-150px; top:0px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; ">
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/functions/time/results/df_syria_out_threats_types" data-background-interactive>
+						<div style="position: absolute; width: 60%;  left:-150px; top:20px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; ">
 							<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-caa22.png"  height="400", width="700">
 						</div>
 						<aside class="notes">
@@ -230,10 +230,10 @@
 					</section>
 
 					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/NWSyria_sites_zoom" data-background-interactive>
-						<div style="position: absolute; width: 60%;  left:-100px; top:0px;">
+						<div style="position: absolute; width: 60%;  left:-200px; top:0px;">
 							<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-telldapiq.png"  height="600">
 						</div>
-						<div style="position: absolute; width: 30%; right:-160px; top:150px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px; font-size: 16px; text-align: left;">
+						<div style="position: absolute; width: 30%; right:-160px; top:100px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px; font-size: 16px; text-align: left;">
 							<!-- <p style = "text-align: right">Sites</p> -->
 							<table style="color: grey;" bgcolor="black">
 								<tr>
@@ -323,8 +323,11 @@
 						</aside>
 					</section>
 
-					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/functions/time/results/df_syria_out_AM009" data-background-interactive>
-						<div style="position: absolute; width: 60%;  left:-100px; top:0px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; font-size: 14px; ">
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/functions/time/results/df_syria_out_AM009_threats" data-background-interactive>
+						<div style="position: absolute; left:-150px; top: 0px; font-size: 24px; color: #000;">
+								Tell Dapiq (AM009)
+						</div>
+						<div style="position: absolute; width: 60%;  left:-150px; top:100px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; font-size: 14px; ">
 							<table >
 								<tr> <th> S_ID </th> <th> Disturbance.Type </th> <th> Disturbance.Cause </th> <th> EDTF </th>  </tr>
 								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> ..2004-12-31 </td> </tr>
@@ -334,7 +337,7 @@
 								  <tr> <td> AM009 </td> <td> Natural </td> <td> Water Action </td> <td> ..2009-05-16 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Natural </td> <td> Wind Action </td> <td> ..2009-05-16 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> 2011-06-10:2015-06-30 </td> </tr>
-								  <tr> <td> AM009 </td> <td> Defensive/Fortification </td> <td> Clearance (Bulldozing/Levelling) </td> <td> 2011-05-11:2015-06-30 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Military </td> <td> Clearance (Bulldozing/Levelling) </td> <td> 2011-05-11:2015-06-30 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Public </td> <td> Occupation/Continued Use </td> <td> ..2011-06-10 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Military </td> <td> Explosion/Heavy Weaponry </td> <td> ..2015-06-30 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> 2016-09-25:2016-11-27 </td> </tr>
@@ -350,8 +353,11 @@
 						</aside>
 					</section>
 
-					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/functions/time/results/df_syria_out_AM009_threats_types_AM009" data-background-interactive>
-						<div style="position: absolute; width: 60%;  left:-100px; top:0px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; font-size: 14px; ">
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/functions/time/results/df_syria_out_AM009_threats_types" data-background-interactive>
+						<div style="position: absolute; left:-150px; top: 0px; font-size: 24px; color: #000;">
+							Tell Dapiq (AM009)
+					</div>
+					<div style="position: absolute; width: 60%;  left:-150px; top:100px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; font-size: 14px; ">
 							<table >
 								<tr> <th> S_ID </th> <th> Disturbance.Type </th> <th> Disturbance.Cause </th> <th> EDTF </th>  </tr>
 								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> ..2004-12-31 </td> </tr>
@@ -361,7 +367,7 @@
 								  <tr> <td> AM009 </td> <td> Natural </td> <td> Water Action </td> <td> ..2009-05-16 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Natural </td> <td> Wind Action </td> <td> ..2009-05-16 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> 2011-06-10:2015-06-30 </td> </tr>
-								  <tr> <td> AM009 </td> <td> Defensive/Fortification </td> <td> Clearance (Bulldozing/Levelling) </td> <td> 2011-05-11:2015-06-30 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Military </td> <td> Clearance (Bulldozing/Levelling) </td> <td> 2011-05-11:2015-06-30 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Public </td> <td> Occupation/Continued Use </td> <td> ..2011-06-10 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Military </td> <td> Explosion/Heavy Weaponry </td> <td> ..2015-06-30 </td> </tr>
 								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> 2016-09-25:2016-11-27 </td> </tr>
@@ -377,7 +383,7 @@
 						</aside>
 					</section>
 
-					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/EA-SummerWorkshop22.png">
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/EA-SummerWorkshop22.png" data-background-color="rgb(255, 255, 255)" data-background-opacity=0.5 class="center">
 						<div style="position: absolute; width: 90%; top:0; right: 0; color: #000;">
 							<h2 style="color: #000;">Conclusion</h2>
 						<aside class="notes">
@@ -394,6 +400,7 @@
 		<script>
 			Reveal.initialize({
 				hash: true,
+				center: false,
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 				// zoomKey: 'tab'
 			});
