@@ -29,11 +29,11 @@ Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
   </tr>
   <tr>
     <td><a href="https://eamena-oxford.github.io/reveal.js/projects/neom">The NEOM area</a></td>
-    <td>Dr Michael Fradley</td>
+    <td>Michael Fradley</td>
   </tr>
   <tr>
     <td><a href="https://eamena-oxford.github.io/reveal.js/projects/caravanserail">Caravanserails</a></td>
-    <td>Dr Bijan Rouhani</td>
+    <td>Bijan Rouhani</td>
   </tr>
   <tr>
     <td><a href="https://eamena-oxford.github.io/reveal.js/projects/apaame">APAAME</a></td>
@@ -42,8 +42,23 @@ Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
 </table>
 </div>
 
+### Others
+
+<div align="center">
+<table>
+  <tr>
+    <th>Presentation</th>
+    <th>Author</th>
+  </tr>
+  <tr>
+    <td><a href="https://eamena-oxford.github.io/reveal.js/projects/time">EDTF</a></td>
+    <td>Thomas Huet, Will Deadman, Kristen Hopper</td>
+  </tr>
+</table>
+</div>
+
 --- 
-This presentation framework use the [reveal.js](#reaveal.js) created by Hakim El Hattab
+This presentations use the [reveal.js](#reaveal.js) created by Hakim El Hattab
 <div align="center">
   MIT licensed | Copyright © 2011-2022 Hakim El Hattab, https://hakim.se
 </div>
