@@ -7,7 +7,7 @@ Highlight your research by creating easy-to-read narrative for important element
   - a Dataset of heritage places giving the context,
   - among these heritage places select one  
 
-### Dataset
+### Workflow
 
 * From  EAMENA 
   - run a EAMENA search and copy/paste the 🗺️ [geojson URL](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme) 
