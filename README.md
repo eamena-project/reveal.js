@@ -3,18 +3,31 @@
 
 ## Shine a light on your work
 
-Highlight your work for the EAMENA-MaREA project by creating easy-to-write summaries of the relevant elements of your work by:
+Highlight your research by creating easy-to-read narrative for important elements of your work for the EAMENA-MaREA project. Each highlight could be composed by:
+  - a Dataset of heritage places giving the context,
+  - among these heritage places select one  
 
-* 📰 **Text** 📰
-  - write a ~ 100 words abstract
+### 📰 Narrative 
 
-* 🗺️ **Spatial** 🗺️
-  - from a [EAMENA search URL](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme) for example 
+
+
+### 🏛️ Dataset 🏛️
+
+* From  EAMENA 
+  - run a EAMENA search and copy/paste the 🗺️ [geojson URL](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme) 
+
+* Write a ~ 100 words abstracts 📰 for:
+  - the whole dataset of heritage places
+  - the selected heritage place
+
+* Photograph 
+  - select 1 or 2 relevant 📷 photographs (with credits if exist)
+
   - follow these [guidelines](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme), *or*
-  - create a GeoJSON polygon of your research area with https://geojson.io/
+  - create a GeoJSON polygon of your research area with 
 
-* 📷 **Photograph** 📷
-  - select 1 relevant photograph (with credits if exist)
+* 
+  
 
 Send the abstract 📰, the GeoJSON 🗺️, and the photograph 📷 to @EMANA
 

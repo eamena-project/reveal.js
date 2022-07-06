@@ -214,20 +214,25 @@
 							</table>
 						</div>
 						<aside class="notes">
-							We now turn to how EDTF helps model temporal dynamics. We reuse results from previous research by Almohamad et al. (a paper under review) on condition assessment of 19 archaeological sites in northwestern Syria. This data has been collected over a five-year period (2014-2019) with ground-based and remote multi-temporal assessments.
-						</aside>
+							We now turn to how EDTF helps model temporal dynamics. We reuse results from previous research by Almohamad et al. (a paper under review) on condition assessment of 19 archaeological sites in northwestern Syria. This data has been collected over a fifteen-year period (2004-2019) with ground-based and remote multi-temporal assessments.
+							For the study, one of the key considerations was to try and understand the timing of particular categories of damage across the sites. By doing this we could attempt to understand these spatial and temporal patterns within the context of local political events during the Syrian conflict.
+							Our methodology used a simple aoristic approach to account for the temporal uncertainty in the timing of damage causes. Aoristic analysis allows us to represent the probability that an event occurred at a particular point between two given dates by assigning a probability weight to each date (in this case each year). The likelihood that the event took place in any one of the years between the two dates is represented by a value of one divided by the interval between the two given dates, in years.
+							However there are issues with this approach including inflated values for the first year of the study, and the fact that an equal number of images was not available for each year.						</aside>
 					</section>
 
 					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/functions/time/results/df_syria_out_threat_types" data-background-interactive>
-						<div style="position: absolute; width: 60%;  left:-100px; top:0px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; ">
+						<div style="position: absolute; width: 60%;  left:-150px; top:0px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; ">
 							<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-caa22.png"  height="400", width="700">
 						</div>
 						<aside class="notes">
-							This study collected 218 different dates now converted to EDTF format. A sample is listed here, in this Excel spreadsheet. This dataset was processed with an R function, and displayed in an interactive web graph. The disturbance analysis showed a clear correlation between the temporal pattern of different types of damage and the changing political situation in the studied area.
+							Using the EDTF format may be one way to deal with the first issue. This study collected 218 different dates now converted to EDTF format. A sample is listed here, in this Excel spreadsheet. This dataset was processed with an R function, and displayed in an interactive web graph. The disturbance analysis showed a clear correlation between the temporal pattern of different types of damage and the changing political situation in the studied area.
 						</aside>
 					</section>
 
 					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/NWSyria_sites_zoom" data-background-interactive>
+						<div style="position: absolute; width: 60%;  left:-100px; top:0px;">
+							<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-telldapiq.png"  height="600">
+						</div>
 						<div style="position: absolute; width: 30%; right:-160px; top:150px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px; font-size: 16px; text-align: left;">
 							<!-- <p style = "text-align: right">Sites</p> -->
 							<table style="color: grey;" bgcolor="black">
@@ -341,7 +346,7 @@
 							</table>
 						</div>
 						<aside class="notes">
-							AM009 has clear conflict related damage within the time period of the study
+							This shows that the instances of damage recorded for Tell Dapiq significantly increased between 2016 and 2018.
 						</aside>
 					</section>
 
@@ -368,7 +373,7 @@
 							</table>
 						</div>
 						<aside class="notes">
-							AM009 has clear conflict related damage within the time period of the study
+							Breaking these down by damage category and usind EDTF we can begin to see patterns in when damage has occurred. The use of archaeological sites for short-term occupation and grazing (by mobile pastoralists) has contributed to both and increase in damages associated with the Domestic and Agricultural/Pastoral categories. Military activity occurs before 2015, but we can assume after the outbreak of the conflict in 2011. Though we can't pinpoint the date further. Looting shows a significant increase likely autumn of 2016 and early 2017. We have corroborating evidence for these damages from field observations. [could add the image we have in the article of ground photos of Tell Dapiq.)
 						</aside>
 					</section>
 
