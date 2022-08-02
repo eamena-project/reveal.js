@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>CAA22-S07</title>
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+		<link rel="icon" href="https://raw.githubusercontent.com/zoometh/thomashuet/main/img/inst-caa22-icon.png">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+					<section class="center">
+						<div>
+							<img src="https://sites.caa-international.org/caa2022/wp-content/uploads/sites/30/2022/07/cropped-CAA2022LogoDates.png" alt="" style="height: 120px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+							<h3>S07: Cultural Heritage data across borders</h3>
+							Web-based management platforms for immovable cultural heritage in the global south
+							<p>
+								<span style="font-size: 25px;">Thomas Huet<sup style="font-size: 15px;"">1</sup>, Crystal El Safadi<sup style="font-size: 15px;"">2</sup>, Bijan Rouhani<sup style="font-size: 15px;"">1</sup>, Ash Smith<sup style="font-size: 15px;"">2</sup></span>
+								<br>
+								<span style="font-size: 20px;"><sup>1</sup> University of Oxford, <sup>2</sup> University of Southampton</span><br>
+								<img src="https://raw.githubusercontent.com/zoometh/thomashuet/main/img/inst-uni-oxford.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent; vertical-align: middle;" class="demo-logo">
+								<img src="https://raw.githubusercontent.com/zoometh/thomashuet/main/img/inst-uni-southampton.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent; vertical-align: middle;" class="demo-logo">
+								</a>
+						</p>
+						</div>
+						<aside class="notes">
+						</aside>					  
+					</section>
+
+					<section data-background-iframe="https://ich.unesco.org/dive/threat/" data-background-interactive>
+						<div style="position: absolute; width: 20%; left:-180px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>"shared heritage"<sup style="font-size: 15px;"">1</sup></h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat<br>
+								<sup style="font-size: 15px;"">1</sup>UNESCO, 1945, <i>Constitution of the United Nations Educational, Scientific and Cultural Organisation (UNESCO)</i><br>
+							</p>
+						</div>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<div style="position: absolute; width: 20%; left:-180px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>What?</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat<br>
+						</div>
+						<div style="position: absolute; width: 20%; right:-180px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>How?</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat<br>
+						</div>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-bam-assessement-date.png">
+						<div style="position: absolute; width: 40%; right:-160px; top:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>Assessment Activity Date</h2>
+							<p>A <span style="font-family: Consolas,monaco,monospace;"><b>Date</b></span> record type, in the standard format YYYY-MM-DD (<a ref="https://www.iso.org/iso-8601-date-and-time-format.html">ISO-8601</a>)<br><br>
+							<small><a ref="https://docs.python.org/3/library/datetime.html">Python</a> - <a ref="https://www.w3schools.com/js/js_date_formats.asp">JavaScript</a> - <a ref="https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-date-format.html">ElasticSearch</a></small>
+							
+						</div>
+						<aside class="notes">
+							As a study, we will focus on the temporal dimension of EAMENA records. This is relevant because EAMENA registers the threats on the cultural heritage that occur simultaneously (events), or spread out in time (durations). One of the simplest examples of a temporal record in EAMENA would be the "Assessment activity date", that is to say the date of the creation of a record. Currently, the data type of this record is a Date in the standard format 4 digits for the year, dash, two digits for the month, dash, two digits for the day (ISO 8601).
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/threats_day.html" data-background-interactive>
+						<aside class="notes">
+							Using the workflow presented in the first slide, we can visualise all 'Assessment Activity Dates' of EAMENA considering the different categories of threats by days in an interactive chart. Here, for example, the  December 2 of 2019, a very large number of agricultural/pastoral threats have been recorded. This data comes from a "bulk upload" created by one of us (Will Deadman) for Iraqi sites in the Mesopotamian agricultural heartland.
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/threats_month.html" data-background-interactive>
+						<aside class="notes">
+							These dates can be aggregate by months..
+						</aside>	
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/threats_year.html" data-background-interactive>
+						<aside class="notes">
+							or by years..
+						</aside>
+					</section>
+
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-cultural-periods.png">
+						<div style="position: absolute; width: 40%; right:-160px; top:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>EDTF</h2>
+							<p>Extended Date/Time Format (<span style="font-family: Consolas,monaco,monospace;"><b>EDTF</b></span>) is an iso-standard (ISO 8601-2) extending the Date format. It provides a formal syntax to record fuzzy dates, very precise dates (timestamp), negative date, intervals, seasons, and a number of other standardised formats<br>
+							<br>
+							<smaller><span style="font-family: Consolas,monaco,monospace;"><b>EDTF</b></span> on the <a ref="http://www.loc.gov/standards/datetime/">Library of Congress</a></smaller>
+						</div>
+						<aside class="notes">
+							In EAMENA, in addition to Date formats, another data type is used to record dates: the EDTF format. EDTF means Extended Date and Time Format. It is an extension of the previously seen ISO-8601 Date format. It allows an accurate record of time events and durations whatever their fuzzyness. In EAMENA, EDTF is used for the Absolute Chronology assessment (Archaeological Timespace).
+						</aside>
+					</section>
+
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-bam.png">
+						<div style="position: absolute; width: 40%; left:0px ; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>Bam Citadel</h2>
+							<smaller>EAMENA-0164997</smaller>
+							<p>Bam is situated in a desert environment on the southern edge of the Iranian high plateau. The origins of Bam can be traced back to the Achaemenid period (6<sup>th</sup> to 4<sup>th</sup> centuries BC). Its heyday was from the 7<sup>th</sup> to 11<sup>th</sup> centuries, being at the crossroads of important trade routes and known for the production of silk and cotton garments. The existence of life in the oasis was based on the underground irrigation canals, the qanāts, of which Bam has preserved some of the earliest evidence in Iran. Arg-e Bam is the most representative example of a fortified medieval town built in vernacular technique using mud layers (Chineh).<br>
+							<br>
+							<smaller><a href="https://whc.unesco.org/en/list/1208/">https://whc.unesco.org/en/list/1208/</a></smaller>
+						</div>
+						<aside class="notes">
+							Let see how EDTF can be used to record more or less precise temporal data brought by different sources. We choose the case of the citadel of Bam, in Iran. Its history has its roots in the Achaemenid period.
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/bam" data-background-interactive>
+						<!-- <div style="position: absolute; width: 70%; left:-170px; bottom:0px;">
+							<h4>Bam (Iran) world heritage site</h4>
+						</div> -->
+						<div style="position: absolute; width: 40%; left:-160px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							Photograph
+							<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/BAM_IR2726.JPG"  height="300">
+							Bam citadel in September 2003, three months before the earthquake <br><br>
+							<small>Wikimedia, CC BY-SA 3.0</small><br>
+						</div>
+						<div style="position: absolute; width: 35%; right:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: brown; color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>Earthquake</h2>
+							Date: 2003-12-26 ; Time: 01:56:52 GMT</p>
+						</div>
+						<div style="position: absolute; width: 20%; left:150px; top:450px; box-shadow: 0 1px 4px rgba(0,0,0,0), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(255, 0, 0, 1); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h3>EDTF</h3>
+							2003-09</p>
+						</div>
+						<div style="position: absolute; width: 40%; right:-160px; top:200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<p style = "text-align: right">Photograph</p>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Destruction_of_the_Bam_Citadel.jpg"  height="300">
+							Bam citadel after the earthquake (unknown date)<br><br>
+							<small>Wikimedia, Public domain</small><br>
+						</div>
+						<div style="position: absolute; width: 30%; right:100px; top:150px; box-shadow: 0 1px 4px rgba(0,0,0,0), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(255, 0, 0, 1); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h3>EDTF</h3>
+							..2003-12-26T01:56:52+03:30</p>
+						</div>
+						<aside class="notes">
+							The citadel of Bam has been destroyed by an earthquake in 2003, exactly on December 26 at 01h56m52s GMT.
+							The two photographs presented here show the citadel before its destruction (left), and after its destruction (right). The red boxes show the EDTF notation of the date of the photograph. We know that the photograph on the left was taken 3 months before the earthquake, in September, but we do not yet know the exact day, so we can record it in YYYY-MM format. The date of the second photograph is unknown, but it was taken after the earthquake: the EDTF format is the concatenate of the date of the earthquake, the GMT offset (+3:30) and two leading dots indicating that the EDTF record is the upper bound of the earthquake date. 
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/NWSyria_sites" data-background-interactive>
+						<div style="position: absolute; width: 30%; right:-160px; top:100px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px; font-size: 16px; text-align: left;">
+							<!-- <p style = "text-align: right">Sites</p> -->
+							<table>
+								<tr>
+									<td>ID</td>
+									<td>Name</td>
+								</tr>
+								<tr>
+									<td>AM001</td>
+									<td>Tell Soran</td>
+								</tr>
+								<tr>
+									<td>AM002</td>
+									<td>Tell Alsheykh Rih</td>
+								</tr>
+								<tr>
+									<td>AM003</td>
+									<td>Tell Akhtareen</td>
+								</tr>
+								<tr>
+									<td>AM004</td>
+									<td>Tell Arshaf</td>
+								</tr>
+								<tr>
+									<td>AM005</td>
+									<td>Tell Maled</td>
+								</tr>
+								<tr>
+									<td>AM006</td>
+									<td>Tell Battal</td>
+								</tr>
+								<tr>
+									<td>AM007</td>
+									<td>Tell Bhorta</td>
+								</tr>
+								<tr>
+									<td>AM008</td>
+									<td>Tell Sha'eer</td>
+								</tr>
+								<tr>
+									<td>AM009</td>
+									<td>Tell Dapiq</td>
+								</tr>
+								<tr>
+									<td>AM010</td>
+									<td>Tell Baraghedeh</td>
+								</tr>
+								<tr>
+									<td>AM011</td>
+									<td>Tell Mizab</td>
+								</tr>
+								<tr>
+									<td>AM012</td>
+									<td>Tell Ahmar (Al Bab)</td>
+								</tr>
+								<tr>
+									<td>AM013</td>
+									<td>Tell al-Fursan</td>
+								</tr>
+								<tr>
+									<td>AM014</td>
+									<td>Tell Arab Hasan Kabır</td>
+								</tr>
+								<tr>
+									<td>AM015</td>
+									<td>Tell Abu Jadha (al Taiarah)</td>
+								</tr>
+								<tr>
+									<td>AM016</td>
+									<td>Tell Ahmar (Barsip)</td>
+								</tr>
+								<tr>
+									<td>AM017</td>
+									<td>Tell al-Halawanji (Castle)</td>
+								</tr>
+								<tr>
+									<td>AM019</td>
+									<td>Abu Qilqil</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Tell al-Bel</td>
+								</tr>
+							</table>
+						</div>
+						<aside class="notes">
+							We now turn to how EDTF helps model temporal dynamics. We reuse results from previous research by Almohamad et al. (a paper under review) on aoristic of condition assessment of 19 archaeological sites in northwestern Syria. This data has been collected over a fifteen-year period (2004-2019) with ground-based and remote multi-temporal assessments. For the study, one of the key considerations was to try and understand the timing of particular categories of damage across the sites. By doing this we could attempt to understand these spatial and temporal patterns within the context of local political events during the Syrian conflict.
+							<!-- Our methodology used a simple aoristic approach to account for the temporal uncertainty in the timing of damage causes. Aoristic analysis allows us to represent the probability that an event occurred at a particular point between two given dates by assigning a probability weight to each date (in this case each year). The likelihood that the event took place in any one of the years between the two dates is represented by a value of one divided by the interval between the two given dates, in years. -->
+							<!-- However there are issues with this approach using the including inflated values for the first year of the study, and the fact that an equal number of images was not available for each year.	 -->
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/df_syria_out_threats_types" data-background-interactive>
+						<div style="position: absolute; width: 60%;  left:-150px; top:20px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; ">
+							<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-caa22.png"  height="400", width="700">
+						</div>
+						<aside class="notes">
+							<!-- Using the EDTF format may be one way to deal with the first issue.  -->
+							This study collected 218 different dates now converted to EDTF format. A sample is listed here, in this Excel spreadsheet. This dataset was processed with an R function, and displayed in an interactive web graph. The disturbance analysis showed a clear correlation between the temporal pattern of different types of damage and the changing political situation in the studied area.
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/NWSyria_sites_zoom" data-background-interactive>
+						<div style="position: absolute; width: 60%;  left:-200px; top:0px;">
+							<img src="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/time-edtf-telldapiq.png"  height="600">
+						</div>
+						<div style="position: absolute; width: 30%; right:-160px; top:100px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px; font-size: 16px; text-align: left;">
+							<!-- <p style = "text-align: right">Sites</p> -->
+							<table style="color: grey;" bgcolor="black">
+								<tr>
+									<td>S_ID</td>
+									<td>Name</td>
+								</tr>
+								<tr>
+									<td>AM001</td>
+									<td>Tell Soran</td>
+								</tr>
+								<tr>
+									<td>AM002</td>
+									<td>Tell Alsheykh Rih</td>
+								</tr>
+								<tr>
+									<td>AM003</td>
+									<td>Tell Akhtareen</td>
+								</tr>
+								<tr>
+									<td>AM004</td>
+									<td>​Tell Arshaf</td>
+								</tr>
+								<tr>
+									<td>AM005</td>
+									<td>Tell Maled</td>
+								</tr>
+								<tr>
+									<td>AM006</td>
+									<td>Tell Battal</td>
+								</tr>
+								<tr>
+									<td>AM007</td>
+									<td>Tell Bhorta</td>
+								</tr>
+								<tr>
+									<td>AM008</td>
+									<td>Tell Sha'eer</td>
+								</tr>
+								<tr style="color: white;" bgcolor="black">
+									<td>AM009</td>
+									<td>Tell Dapiq</td>
+								</tr>
+								<tr>
+									<td>AM010</td>
+									<td>Tell Baraghedeh</td>
+								</tr>
+								<tr>
+									<td>AM011</td>
+									<td>Tell Mizab</td>
+								</tr>
+								<tr>
+									<td>AM012</td>
+									<td>Tell Ahmar (Al Bab)</td>
+								</tr>
+								<tr>
+									<td>AM013</td>
+									<td>Tell al-Fursan</td>
+								</tr>
+								<tr>
+									<td>AM014</td>
+									<td>Tell Arab Hasan Kabır</td>
+								</tr>
+								<tr>
+									<td>AM015</td>
+									<td>Tell Abu Jadha (al Taiarah)</td>
+								</tr>
+								<tr>
+									<td>AM016</td>
+									<td>Tell Ahmar (Barsip)</td>
+								</tr>
+								<tr>
+									<td>AM017</td>
+									<td>Tell al-Halawanji (Castle)</td>
+								</tr>
+								<tr>
+									<td>AM019</td>
+									<td>Abu Qilqil</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Tell al-Bel</td>
+								</tr>
+							</table>
+						</div>
+						<aside class="notes">
+							Let's focus on one of these sites, Tell Dapiq
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/df_syria_out_AM009_threats" data-background-interactive>
+						<div style="position: absolute; left:-150px; top: 0px; font-size: 24px; color: #000;">
+								Tell Dapiq (AM009)
+						</div>
+						<div style="position: absolute; width: 60%;  left:-150px; top:100px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; font-size: 14px; ">
+							<table >
+								<tr> <th> S_ID </th> <th> Disturbance.Type </th> <th> Disturbance.Cause </th> <th> EDTF </th>  </tr>
+								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> ..2004-12-31 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Infrastructure/Transport </td> <td> Clearance (Bulldozing/Levelling) </td> <td> ..2004-12-31 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Hydrological </td> <td> Construction </td> <td> ..2004-12-31 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Development </td> <td> Dumping </td> <td> ..2009-05-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Natural </td> <td> Water Action </td> <td> ..2009-05-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Natural </td> <td> Wind Action </td> <td> ..2009-05-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> 2011-06-10:2015-06-30 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Military </td> <td> Clearance (Bulldozing/Levelling) </td> <td> 2011-05-11:2015-06-30 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Public </td> <td> Occupation/Continued Use </td> <td> ..2011-06-10 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Military </td> <td> Explosion/Heavy Weaponry </td> <td> ..2015-06-30 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> 2016-09-25:2016-11-27 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Agricultural/Pastoral </td> <td> Trees </td> <td> ..2016-10-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Looting </td> <td> Excavation (Hand) </td> <td> ..2016-10-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Agricultural/Pastoral </td> <td> Grazing/Animal Movement </td> <td> 2017-02-20 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Looting </td> <td> Excavation (Hand) </td> <td> 2017-04-20:2018-02-07 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Agricultural/Pastoral </td> <td> Grazing/Animal Movement </td> <td> 2018-02-07 </td> </tr>
+							</table>
+						</div>
+						<aside class="notes">
+							The aoristic analysis shows that the instances of damage recorded for Tell Dapiq significantly increased between 2016 and 2018.
+						</aside>
+					</section>
+
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/df_syria_out_AM009_threats_types" data-background-interactive>
+						<div style="position: absolute; left:-150px; top: 0px; font-size: 24px; color: #000;">
+							Tell Dapiq (AM009)
+					</div>
+					<div style="position: absolute; width: 60%;  left:-150px; top:100px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; font-size: 14px; ">
+							<table >
+								<tr> <th> S_ID </th> <th> Disturbance.Type </th> <th> Disturbance.Cause </th> <th> EDTF </th>  </tr>
+								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> ..2004-12-31 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Infrastructure/Transport </td> <td> Clearance (Bulldozing/Levelling) </td> <td> ..2004-12-31 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Hydrological </td> <td> Construction </td> <td> ..2004-12-31 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Development </td> <td> Dumping </td> <td> ..2009-05-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Natural </td> <td> Water Action </td> <td> ..2009-05-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Natural </td> <td> Wind Action </td> <td> ..2009-05-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> 2011-06-10:2015-06-30 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Military </td> <td> Clearance (Bulldozing/Levelling) </td> <td> 2011-05-11:2015-06-30 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Public </td> <td> Occupation/Continued Use </td> <td> ..2011-06-10 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Military </td> <td> Explosion/Heavy Weaponry </td> <td> ..2015-06-30 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Domestic </td> <td> Construction </td> <td> 2016-09-25:2016-11-27 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Agricultural/Pastoral </td> <td> Trees </td> <td> ..2016-10-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Looting </td> <td> Excavation (Hand) </td> <td> ..2016-10-16 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Agricultural/Pastoral </td> <td> Grazing/Animal Movement </td> <td> 2017-02-20 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Looting </td> <td> Excavation (Hand) </td> <td> 2017-04-20:2018-02-07 </td> </tr>
+								  <tr> <td> AM009 </td> <td> Agricultural/Pastoral </td> <td> Grazing/Animal Movement </td> <td> 2018-02-07 </td> </tr>
+							</table>
+						</div>
+						<aside class="notes">
+							Breaking these down by damage category and using EDTF we can begin to see patterns in when damage has occurred. The use of archaeological sites for short-term occupation and grazing (by mobile pastoralists) has contributed to both and increase in damages associated with the Domestic and Agricultural/Pastoral categories. Military activity occurs before 2015, but we can assume after the outbreak of the conflict in 2011. Though we can't pinpoint the date further. Looting shows a significant increase likely autumn of 2016 and early 2017. We have corroborating evidence for these damages from field observations.
+						</aside>
+					</section>
+
+					<section data-background-image="https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/www/EA-SummerWorkshop22.png" data-background-color="rgb(255, 255, 255)" data-background-opacity=0.5 class="center">
+						<div style="position: absolute; width: 90%; top:0; right: 0; color: #000;">
+							<h2 style="color: #000;">Conclusion</h2>
+						<aside class="notes">
+							 EAMENA is a massive geo-web database that offers all the computing facilities to semantize its content and complies with open science and FAIR directives. EDTF time format is one of these iso-standards supported by the database. EAMENA can be connected  to open source applications, and first of all to scripted routines. These latters facilitate the management of very large volumes of data within a framework compliant with high scientific standards. Cloud computing with shared graphical interfaces (programming consoles) or platforms like GitHub make it possible to share and co-develop entire or partial automated workflows (for example: to use RStudio Cloud to read and write in your Google Drive). This offers great opportunities to integrate the very large amount of EAMENA data into authoring frameworks for cultural heritage research and management.
+						</aside>					  
+					</section>
+			</div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				center: false,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				// zoomKey: 'tab'
+			});
+		</script>
+	</body>
+</html>
