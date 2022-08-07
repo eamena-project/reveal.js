@@ -371,6 +371,23 @@ section.has-light-background, section.has-light-background h1, section.has-light
     color: grey;
  }
 
+ /* a bibliographic reference */
+ .reveal .refbib
+ {
+    text-align: center;
+    font-size: 0.8em;
+    color: grey;
+ }
+
+ /* a footnote-like for a bibliographic reference */
+ .reveal .refbibnote
+ {
+    vertical-align: super;
+    text-align: center;
+    font-size: 0.6em;
+    color: grey;
+ }
+
  .reveal .filename
  {
     text-align: right;
