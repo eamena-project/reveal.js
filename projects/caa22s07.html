@@ -39,18 +39,10 @@
 					</section>
 
 					<section>
-						<div style="position: absolute; width: 20%; left:-180px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">							
-							<h2>"shared heritage"<sup style="font-size: 15px;"">1</sup></h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat<br>
-								<sup style="font-size: 15px;"">1</sup>UNESCO, 1945, <i>Constitution of the United Nations Educational, Scientific and Cultural Organisation (UNESCO)</i><br>
-							</p>
+						<div style="font-size: 30px;">
+						"shared heritage"<sup style="font-size: 15px;"">1</sup><br>
+						<span class="refbib"><sup style="font-size: 15px;"">1</sup>UNESCO, 1945, <i>Constitution of the United Nations Educational, Scientific and Cultural Organisation (UNESCO)</i></span>
 						</div>
-						<aside class="notes">
-							According to UNESCO, cultural heritage is a "shared heritage". Our purpose today is to see how the data of this shared heritage can effectively be shared despite many obstacles. The EAMENA and MarEA projects have thus far pulled together a significant resource on cultural heritage in MENA. But it is through linking this resource, ensuring its sustainability, working towards its data analysis capabilities and its use in regional and local management and protection plans, that the true value of this resource transpires. This is where challenges however lie, in the execution and translation of this resource into a digital asset. We hope that by sharing our experiences and methods on these web-based platforms in this session, we can share our understanding on best and proven practices and learn from the different projects and research
-						</aside>
-					</section>
-
-					<section>
 						<div style="position: absolute; width: 40%; top:200px; right:-200px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 255, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 							<span style="float: right;">Natural Heritage (NH)</span><br>
 							<img src="https://whc.unesco.org/uploads/thumbs/site_1448_0001-750-750-20170609175555.jpg"  height="300">
@@ -81,7 +73,7 @@
 							<h2><a ref="https://eamena-oxford.github.io/reveal.js/projects/caa22s07.html#/3">How</a><span style="font-size: 15px;""> do we share?</span></h2>
 						</div>
 						<aside class="notes">
-						During this session we will be focused on immovible heritage, whether this heritage belongs to cultural heritage, natural heritage or mixted heritage
+							According to UNESCO, cultural heritage is a "shared heritage". The question of "what" we share is not at the heart of this session, we will be focused on immovible heritage, whether this heritage belongs to cultural heritage, natural heritage or mixted heritage. But our mian question will be on "how" we share this heritage, or more precisely how we share information on this heritage.
 						</aside>
 					</section>
 
@@ -104,11 +96,11 @@
 						⬇️
 						<p>Linked Data (LD)/Linked Open Data (LOD)<br></p>
 						<div style="position: absolute; width: 15%; right:-180px; top:0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 5px; font-size: 20px; text-align: left;">
-							<caption>licences</caption>
 							<img src="https://raw.githubusercontent.com/zoometh/thomashuet/main/img/lod-licences.png"  height="400">
+							<span class="caption">licences</span>
 						</div>
 
-						<div style="position: absolute; width: 50%; left:-180px; bottom:-300px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<div style="position: absolute; width: 60%; left:-180px; bottom:-300px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 25px; text-align: left;">
 						<pre><code data-trim>
 							cff-version: 1.2.0
 							message: "If you use this software, please cite it as below."
@@ -121,12 +113,11 @@
 							doi: 10.5281/zenodo.1234
 							date-released: 2021-08-11
 						</code></pre>
-						GitHub repository citation file example (<code>citation.cff</code>)
+						<span class="caption">GitHub repository citation file example (<code>citation.cff</code>)</span>
 						</div>
 
 						<div style="position: absolute; width: 20%; right:100px; bottom:-300px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 						<table class="demo">
-							<caption>5-star LOD by T. Berners-Lee</caption>
 							<tbody>
 							<tr>
 								<td>⭐</td>
@@ -150,15 +141,11 @@
 							</tr>
 							<tbody>
 						</table>
+						<span class="caption">5-star LOD by T. Berners-Lee</span>
 					</div>
 
 						<aside class="notes">
-							LD is another name for the web of data
-							recommendtations HTTP URI-based names
-							LOD are LD with open licencing, schema (CRM) and metadata.
-							Open science policies: <em>"accessible as much as possible and closed as much as necessary"</em>
-							For example Citation File Formats (.cff) are plain text files with human- and machine-readable citation information for software (and datasets).
-							With LOD, we are moving from a documentary web (web 2.0) to a web of LD.
+							LD is another name for the web of data. LOD are LD with open licencing, schema (CRM) and metadata. To share data, W3C recommand to adopt HTTP URI-based names. With LOD, we are moving from a documentary web (web 2.0) to a web of LD (web 3.0). Files should be readable by a person or a machine. This statement is at the root of the semantic web: for example Citation File Formats (.cff) are citation information for software (and datasets). Now, to share scientific information, like condition assessemnent of an heritage place, the open science policies are to make this information "accessible as much as possible and closed as much as necessary" 
 						</aside>
 					</section>
 
@@ -179,12 +166,12 @@
 							</ol>
 						</div>
 							<aside class="notes">
-								LOUD have API based on the HTTP protocol. For example WikiData and vocab.getty are two LOUD providers. SPARQL endpoints 
-								select * {?f a gvp:Facet; skos:inScheme aat: ; gvp:prefLabelGVP/xl:literalForm ?l}
+								The most self-explanatory LD are the so-called LOUD with API based on HTTP. For example WikiData and vocab.getty are two LOUD providers with SPARQL endpoints 
+								`select * {?f a gvp:Facet; skos:inScheme aat: ; gvp:prefLabelGVP/xl:literalForm ?l}`
 							</aside>
 					</section>
 
-					<section>
+					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html" data-background-interactive>
 						<div style="position: absolute; width: 40%; left:-180px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 							<h2>International standards</h2>
 							<p>
@@ -192,7 +179,7 @@
 									<li><a ref="https://www.cidoc-crm.org/">CIDOC-CRM</a> (ISO 21127): <em>"curated knowledge of museums"</em><span class="refbibnote">1</span></li>
 									<ul>
 										<li><a ref="https://www.cidoc-crm.org/crmarchaeo/home-3">CRMarchaeo</a>: for the excavation process based on the Harris matrix</li>
-										<li><a ref="https://github.com/chml-3d">CHML-3D: metadata scheme for 3D reconstruction</a></li>
+										<li><a ref="https://github.com/chml-3d">CHML-3D</a>: metadata scheme for 3D reconstruction</li>
 									  </ul>
 									<li><a ref="https://dublincore.org/">Dublin Core</a> (ISO 15836): semantic web vocabulary used to express data and metadata</li>
 									<li><a ref="https://perio.do/en/">PeriodO</a>: thesaurus for the definition of (pre)historical periods</li>
@@ -201,7 +188,7 @@
 							</p>
 						</div>
 						<aside class="notes">
-							PeriodO uses Archival Resource Key (Ark) identifiers based on the URI standard.
+							So, to share data, we need to share decriptors and models. Some examples here. The CIDOC-CRM is used for the description and organisation of CH-related information. It is aligned with the Dublin Core. The CRMarchaeo and CHML-3D are two CIDOC-CRM extensions respectively for excavation and 3D reconstruction processes. Dublin Core is a semantic web vocabulary used to express data in an RDF model. PeriodO registers cultural periods using Archival Resource Key (Ark) identifiers based on the URI standard.
 						</aside>
 					</section>
 				
@@ -230,11 +217,11 @@
 						<span style="font-size: 30px;"">FAIR</span> data
 						<ul>
 							<li><span style="font-size: 30px;"">F</span>indable: DOI, URL, ORCID, etc.</li>
-							<li><span style="font-size: 30px;"">A</span>ccessible: open data, REST API</li>
+							<li><span style="font-size: 30px;"">A</span>ccessible: open data, HTTP API</li>
 						</ul>
 					</div>
 					<aside class="notes">
-						Accessible means make the data Open Access (open data) as much as possible, but that metadata is always available. The use of the HTTP REST API is strongly recommended
+						Accessible means make to propose open access data (open data) as much as possible, but always the metadata. The use of the HTTP REST API is one of the W3C recommendations
 					</aside>
 				</section>
 
@@ -247,12 +234,12 @@
 						<span style="font-size: 30px;"">FAIR</span> data
 						<ul>
 							<li><span style="font-size: 30px;"">F</span>indable: DOI, URL, ORCID, etc.</li>
-							<li><span style="font-size: 30px;"">A</span>ccessible: open data, REST API</li>
+							<li><span style="font-size: 30px;"">A</span>ccessible: open data, HTTP API</li>
 							<li><span style="font-size: 30px;"">I</span>nteroperable: RDF, OWL, SKOS</li>
 						</ul>
 					</div>
 					<aside class="notes">
-						A common implementation of the interoperability principle is to use semantic Web technologies (RDF, OWL, SKOS) to represent and link data and metadata
+						A common implementation of the interoperability principle is to use semantic Web technologies (RDF and OWL vocabularies, SKOS model) to represent and link data and metadata
 					</aside>
 				</section>
 
@@ -271,7 +258,7 @@
 						</ul>
 					</div>
 					<aside class="notes">
-						Interactivity is a good way to offer reusability. The reusability of data should be mentionned in the licences. Reusability is the main motivation for a DMP. 
+						Interactivity is a good way to offer reusability. The reusability of data should be mentionned in the licences. Reusability is the main motivation for a data management plan. 
 					</aside>
 				</section>
 
@@ -331,7 +318,7 @@
 						</table>
 					</div>
 						<aside class="notes">
-							As said managing all these concepts is a challenge per se... But hopefully, exists IT solution to group all these elements in a unique platform. I will present three of them
+							As said managing all these concepts is a challenge per se... But hopefully, exists open source apps (FOSS) and infrastructures, allowing to group all these requirements in a unique platform. I will present some of them.
 						</aside>
 					</section>
 
@@ -346,7 +333,8 @@
 							</p>
 						</div>
 						<aside class="notes">
-							ResearchSpace
+							ResearchSpace is a web-based platform that offers a collaborative environment for humanities
+							and CH research projects. It has been developed by the British Museum. Among other things, uses the CIDOC-CRM ontology and IIIF viewer
 						</aside>
 					</section>
 
@@ -362,7 +350,7 @@
 							</p>
 						</div>
 						<aside class="notes">
-							Wiss-KI
+							Wiss-KI aims is to become a reference for object-oriented documentation management. It is a modular extension of the Drupal content mamagement system (CMS). It integrates the ontology Erlangen-CRM ontology (an OWL-DL) for an heavy documentation of data.
 						</aside>
 					</section>
 
@@ -379,7 +367,7 @@
 						</div>
 					</p>
 						<aside class="notes">
-							Arches
+							Arches is a geospatial semantic graph platform for CH management. It integrates natively Dublin Core, CIDOC-CRM, SKOS, SPARQL. It's forthcoming version (v7) will also offer internationalization, RTL UI support and multi-language data import/export.
 						</aside>
 					</section>
 
@@ -401,7 +389,7 @@
 						</p>
 						</div>
 						<aside class="notes">
-							ADS
+							The Archaeology Data Service (ADS) is hosted by the University of York. It is one of the leading digital repositories for heritage data in the UK. Its aim is the long-term digital preservation of data and the promotion of good practice including ensuring the re-use of digital data. It uses CIDOC-CRM ontologies, controlled vocabularies such as the Getty AAT and the Periodo thesaurus. Such IT are supported by the European infrastructure ARIADNEplus and the SEADDA actions for archaeological data.
 						</aside>
 					</section>
 
@@ -423,7 +411,7 @@
 							</ul>
 						</div>
 						<aside class="notes">
-							Omeka-S
+							Omeka-S is the semantisation of Omeka. It is a CMS platform for publishing CH-related data with other online resources by creating links between resources, attaching metada, building vocabularies or templates. It uses the Dublin Core semantic web vocabulary.
 						</aside>
 					</section>
 
@@ -451,7 +439,7 @@
 						</p>
 						</div>
 						<aside class="notes">
-							ARIADNEplus
+							ARIADNEplus is a LOUD European infrastructure that aims to pool archaeological research and technology, promoting good practices. It uses the CIDOC-CRM, SPARQL endpoint, PeriodO, the Getty AAT thesaurus, and numerous other FOSS app.
 						</aside>
 					</section>
 
@@ -480,14 +468,14 @@
 						</p>
 						</div>
 						<aside class="notes">
-							SEADDA.
+							Saving European Archaeology from the Digital Dark Age (SEADDA, or SEADDA COST actions) is a ARIADNEplus parent-related project for building capacity to entail the spread of new technologies in digital archaeology.
 							Have a look on Arches projects in the Global South
 						</aside>
 					</section>
 
 					<section data-background-iframe="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/arches-global-south.html" data-background-interactive>
 						<aside class="notes">
-							
+							Arches-based projects in the Global South
 						</aside>
 					</section>
 
@@ -503,21 +491,14 @@
 							</ul>
 						</div> -->
 						<aside class="notes">
-							Arches is an open access geospatial semantic graph database platform of cultural heritage management. Arches has been funded by the Getty Conservation Institute and the World Monuments Fund.
-							Considering the open science aspects, Arches uses natively: the CIDOC-CRM ontology, the Dublin Core thesaurus, the SKOS data model, and a SPARQL endpoint
+							Arches has been funded by the Getty Conservation Institute and the World Monuments Fund.
 						</aside>
 					</section>
 
 					<section data-background-iframe="https://database.eamena.org/en/" data-background-interactive>
 						<aside class="notes">
-							Funded in 2015 by Arcadia, a Charitable Fund of Lisbet Rausing and Peter Baldwin, the EAMENA project is a digital documentation project of archaeological and cultural heritage sites in about 20 countries in the MENA region
-							It uses Arches platform. EAMENA has been also developing national implementations of the Arches database for cultural heritage management in different countries in the MENA, including Jordan, Lebanon, and Occupied Palestinaian Territories. There are now more than 340,000 records in the EAMENA database, including ca 180,000 heritage places covering both MarEA’s maritime sites and terrestrial sites. The Digital record of archaeological sites into the database improves the inventory and future management and preservation of sites in the MENA. Our resource models or data forms enable the documentation of not only archaeological sites/heritage places, but also detailed condition assessments, environmental and geoarchaeological information. All this helps us in contextualisation heritage in the region and linking across forms to build a more rounded picture of the record we have, its condition, and threats acting upon it. The project has trained more than 160 archaeological and heritage professionals in 8 countries in EAMENA methodology (Jordan, Palestine, Lebanon, Egypt, Yemen, Iraq, Libya, Tunisia). Nearly 15,000 sites have been recorded by EAMENA trainees. Over recent years EAMENA has been followed by a series of projects that now cover much of the ‘global South’ and all use the Arches platform.
-						</aside>
-					</section>
-
-					<section data-background-iframe="https://database.eamena.org/en/" data-background-interactive>
-						<aside class="notes">
-							It is based at the School of Archaeology of the University of Oxford, in partnership with Leceister and Durham universities in the UK. EAMENA mainly uses remote sensing but also on-the-ground methodologies for discovering and assessing threats and disturbances to cultural heritage in the MENA region. Its sister project, Maritime Endangered Archaeology (MarEA), was established in 2019 at the Universities of Southampton and Ulster, also funded by Arcadia, to rapidly and comprehensively document and assess threats to the maritime and coastal archaeology of the Middle East and North Africa. Given that the coastal zone in the MENA region is under huge threat from natural and human impacts, MarEA is addressing the critical need to document maritime cultural heritage in the region. EAMENA and the MarEA teams work closely together and use the same database in their assessment of cultural and maritime cultural heritage. The Middle East and North Africa (MENA) region is home to some of the world’s best preserved cultural heritage, including terrestrial and maritime archaeological remains, from prehistory to the Islamic period and modern times. Data collected by the EAMENA and MarEA  projects show that cultural heritage sites in the MENA region are under threat from factors such as agricultural expansion, armed conflict and looting,  natural/coastal erosion, construction and urban development, and climate change
+							The Endangered Archaeology in Middle East and North Africa (EAMENA) was funded in 2015 by Arcadia, a Charitable Fund of Lisbet Rausing and Peter Baldwin, for a digital documentation of archaeological and cultural heritage sites in about 20 countries in the MENA region
+							It uses Arches platform. EAMENA has been also developing national implementations of the Arches database for cultural heritage management in different countries in the MENA, including Jordan, Lebanon, and Occupied Palestinaian Territories. There are now more than 340,000 records in the EAMENA database, including ca 180,000 heritage places covering both Maritime Endangered Archaeology (MarEA)’s maritime sites and terrestrial sites. MaREA was established in 2019 at the Universities of Southampton and Ulster, also funded by Arcadia. The Digital record of archaeological sites into the database improves the inventory and future management and preservation of sites in the MENA. The project has trained more than 160 archaeological and heritage professionals in 8 countries in EAMENA methodology (Jordan, Palestine, Lebanon, Egypt, Yemen, Iraq, Libya, Tunisia). Nearly 15,000 sites have been recorded by EAMENA trainees. Over recent years EAMENA has been followed by a series of projects that now cover much of the ‘global South’ and all use the Arches platform. Data collected by the EAMENA and MarEA  projects show that cultural heritage sites in the MENA region are under threat from factors such as agricultural expansion, armed conflict and looting, natural/coastal erosion, construction and urban development, and climate change
 						</aside>
 					</section>
 
@@ -586,21 +567,22 @@
 					<aside class="notes">
 						15 minutes of presentations + 5 minutes for Q/A + 5 minutes of handover
 						<ol>
-					<li>
-						The project Mongolian Archaeology Project: Surveying the Steppes (MAPSS) is an ambitious project led by the Max Planck Institute. It uses the Arches platform and aims to combine ML/DL, multi-paradigm surveys, among other methods, to inform the natural and cultural heritage of Mongolia.</li>
-					<li>
-						The IMAP project focuses on the coastline of Pakistan. It also uses Arches</li>
-					<li>
-						The last paper of the morning will be presented by the Archaeological data Service (ADS), the national archive
-						for archaeological data in the UK, it is an already consolidated project complying with up-to-date IT, like CIDOC-CRM ontologies, controlled vocabularies such as the Getty AAT to describe art, architecture and material culture objects or and Periodo to describe periods. Such IT are supported by the European infrastructure ARIADNEplus for archaeological data</li>
-					<li>
-						The first communication of the afternoon will be the presentation of an ArcGIS server geospatial-based platform allowing to link climate change consequences (flooding, fire, and cyclones) impacts and potential to significant cultural and natural sites. Since the global warming has become one of the major threat in many region. It will be interesting for us to understand how this can be handled in an information system</li>
-					<i>
-						The two last presentation will be on case study on one the richest countries in the world in terms of cultural heritage: Syria. The first presentation devoted to this country will focus on the well-known site of Apamea. 
-					</i>
-					...Some countries in the South are under the threat of armed conflict. One of the most obvious is Syria, which is also one of  [2, 5]. Two articles will be devoted to this country: one deals with the well-known site of Apamea in the western part [2], the other with 19 sites in the northwestern part [5]. The latter, also linked to EAMENA/MaREA, deals with another iso-standard: EDTF.
-					... heritage that is not only built and cultural but also natural [2]. ... We will have an article on a platform integrating natural diseases [3]. Indeed, natural threats are now becoming a global problem for cultural heritage. 
-					...  [6].. Maritime protected areas (MPA)..sea level change
+							<li>
+								The project Mongolian Archaeology Project: Surveying the Steppes (MAPSS) is an ambitious project led by the Max Planck Institute. It uses the Arches platform and aims to combine ML/DL, multi-paradigm surveys, among other methods, to inform the natural and cultural heritage of Mongolia.</li>
+							<li>
+								The Inventory of Maritime Archaeology of Pakistan (IMAP) project focuses on the coastline of Pakistan. It also uses Arches. Based in Pakistan, this project challenges the difficulties to build almost from scratch, a reference platform </li>
+							<li>
+								The last paper of the morning will be presented by the Archaeological data Service (ADS), the national archive
+								for archaeological data in the UK. As said, it is an already consolidated project complying with up-to-date FAIR policies.</li>
+							<li>
+								The first communication of the afternoon will be the presentation of an ArcGIS server geospatial-based platform allowing to link climate change consequences impacts and potential to significant cultural and natural sites. Since the global warming has become one of the major threat in many regions, it will be interesting for us to understand how this can be handled in an information system</li>
+							<li>
+								The two last presentation will be on case study on one the richest countries in the world in terms of cultural heritage: Syria. 
+								The first presentation devoted to this country will focus on the well-known site of Apamea a well-known case of study to assess looting marks through remote sensing (multi-source satellite imagery)
+							</li>
+							<li>
+								The last paper of our session will be on temporal analysis of disturbances of 19 NW Syrian sites with a very precise temporal granularity using the Extended Date & Time Format (EDTF). Some outputs of this study are interactive and reproductible thanks to an R package. 
+							</li>
 						</ol>
 					</aside>
 				</section>
