@@ -400,3 +400,13 @@ section.has-light-background, section.has-light-background h1, section.has-light
     vertical-align: middle;
     font-size: 1.5em;
  }
+
+ /* strikethrough a entire table row */
+ .reveal tr.strikeout td:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-bottom: 1px solid #111;
+  width: 100%;
+}
