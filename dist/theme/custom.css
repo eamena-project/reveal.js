@@ -402,6 +402,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
  }
 
  /* strikethrough a entire table row */
+ /* ne fonctionne pas */
  .reveal tr.strikeout td:before {
   content: " ";
   position: absolute;
